@@ -1,0 +1,18 @@
+package SetPkg;
+
+import java.util.HashSet;
+
+public class SetDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       HashSet<String> s=new HashSet<>();
+       s.add("Vaishali");
+       s.add("Vaishu");
+       s.add("vaish");
+       s.add("v");
+       
+       System.out.println(s);
+	}
+
+}

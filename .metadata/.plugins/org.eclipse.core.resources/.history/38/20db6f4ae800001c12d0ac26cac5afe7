@@ -1,0 +1,14 @@
+package PracticeDay4;
+
+public class EvenNumUsingLoop {
+
+	public static void main(String[] args) {
+		for (int i = 121; i <= 9; i++) {
+
+			if (i % 2 == 0)
+				System.out.println("Even Num");
+
+		}
+	}
+
+}

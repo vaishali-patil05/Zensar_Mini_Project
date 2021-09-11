@@ -1,0 +1,19 @@
+package SetPkg;
+
+import java.util.LinkedHashSet;
+
+public class LinkedHashSetDemo {
+
+	public static void main(String[] args) {
+		LinkedHashSet<String> l=new LinkedHashSet<>();
+		l.add("Vaishali");
+		l.add("Vaishu");
+		l.add("vaish");
+		l.add("Hemant");
+		System.out.println(l);
+		
+		
+
+	}
+
+}

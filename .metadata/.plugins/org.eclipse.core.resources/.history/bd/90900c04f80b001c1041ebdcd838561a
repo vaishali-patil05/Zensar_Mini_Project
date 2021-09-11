@@ -1,0 +1,38 @@
+package HashMap;
+
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Set;
+
+import javax.print.attribute.HashAttributeSet;
+
+public class StudDemo {
+
+	public static void main(String[] args) {
+	
+		HashMap<Student,Integer> hm=new HashMap<>();
+		hm.put(new Student(1,"Pavan","Nashik"), 93);
+		hm.put(new Student(2,"Akshay","Nashik"), 93);
+		hm.put(new Student(3,"Om","Nashik"), 95);
+		hm.put(new Student(4,"Rahul","Nashik"), 91);
+		hm.put(new Student(1,"Pavan","Nashik"), 99);
+		Set<Student> ss=hm.keySet();
+		
+		for(Student ob:ss)
+		{
+			System.out.println(ob+ " ->"+hm.get(ob));
+		}
+		
+		class mysort implements Comparator<Student>
+		{
+
+			@Override
+			public int compare(Student o1, Student o2) {
+				// TODO Auto-generated method stub
+				return o1.getName().compareTo(o2.getName());
+			}
+			
+		}
+	}
+
+}

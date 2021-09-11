@@ -1,0 +1,14 @@
+package SetPkg;
+
+import java.util.TreeMap;
+import java.util.TreeSet;
+
+public class TreeMapDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TreeSet<Double> t=new Tree
+
+	}
+
+}

@@ -1,0 +1,29 @@
+package HashMap;
+
+import java.util.TreeMap;
+
+public class EmpClass  {
+
+	public static void main(String[] args) {
+		TreeMap<Emp,Integer> tm=new TreeMap<>();
+		tm.put(new Emp(101,"A"), 90);
+		tm.put(new Emp(100,"B"), 90);
+		tm.put(new Emp(11,"C"), 90);
+		tm.put(new Emp(120,"D"), 90);
+		
+		System.out.println(tm);
+		
+
+	}
+
+}
+////class myEmpComparator implements Comparator<Emp>
+//{
+//
+//	@Override
+//	public int compare(Emp o1, Emp o2) {
+//		// TODO Auto-generated method stub
+//		return o1.getName().compareTo(o2.getName());
+//	}
+	
+//}

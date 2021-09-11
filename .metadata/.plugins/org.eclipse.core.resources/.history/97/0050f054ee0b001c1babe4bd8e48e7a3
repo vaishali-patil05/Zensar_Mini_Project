@@ -1,0 +1,19 @@
+package HashMap;
+
+import java.util.LinkedHashMap;
+
+public class DemoLinkedHashMap {
+
+	public static void main(String[] args) {
+		LinkedHashMap<String, Integer> lhm=new LinkedHashMap<>();
+		lhm.put("Vaishali", 90);
+		lhm.put("yash", 92);
+		lhm.put("Hemant", 95);
+		lhm.put("Manish", 94);
+		lhm.put("Swami", 85);
+		
+		System.out.println(lhm);
+
+	}
+
+}

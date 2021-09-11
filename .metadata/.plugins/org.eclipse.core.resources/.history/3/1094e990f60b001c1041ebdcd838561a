@@ -1,0 +1,17 @@
+package HashMap;
+
+import java.util.HashMap;
+
+import javax.print.attribute.HashAttributeSet;
+
+public class StudDemo {
+
+	public static void main(String[] args) {
+		HashMap<Integer,String> hm=new HashMap<>();
+		
+		
+		
+
+	}
+
+}

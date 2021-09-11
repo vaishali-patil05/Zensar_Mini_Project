@@ -1,0 +1,48 @@
+package HashMap;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Set;
+
+import javax.print.attribute.HashAttributeSet;
+
+public class StudDemo {
+
+	public static void main(String[] args) {
+	
+		ArrayList<Student> al=new ArrayList<>();
+		al.add(new Student(1,"Om","Pune"));
+		al.add(new Student(4,"B","Pune"));
+		al.add(new Student(3,"Raj","Pune"));
+		al.add(new Student(2,"Diya","Pune"));
+		al.add(new Student(11,"Gian","Pune"));
+		//Collections.sort(al);
+		Collections.sort(al,new mysort());
+		for(Student ob:al)
+			System.out.println(ob);
+	}
+	}
+
+	class mysort implements Comparator<Student>
+	{
+
+		@Override
+		public int compare(Student o1, Student o2) {
+			// TODO Auto-generated method stub
+			return o1.getSid()-o2.getSid();
+		}
+		
+	}
+
+	class mysort2 implements Comparator<Student>
+	{
+
+		@Override
+		public int compare(Student o1, Student o2) {
+			// TODO Auto-generated method stub
+			return o1.getName().compareTo(o2.getName());
+		}
+		
+	}

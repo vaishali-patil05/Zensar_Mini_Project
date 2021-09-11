@@ -1,0 +1,19 @@
+package Day6;
+import java.util.Scanner;
+
+public class TestMovie {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		Movie m1=new Movie();
+	   System.out.println("Enter Movie_name, movie_id : ");
+	   String name=sc.next();
+	   int id=sc.nextInt();
+	   m1.setMovie_id(id);
+	   m1.setMovie_name(name);
+	
+	
+
+	}
+
+}

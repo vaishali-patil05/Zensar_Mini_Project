@@ -1,0 +1,45 @@
+package HashMap;
+
+import java.util.HashMap;
+
+public class DemoHashMap {
+
+	public static void main(String[] args) {
+		// Key Should be unique
+		// value can be duplicate
+		
+		/*HashMap<String,Integer> hm=new HashMap<>();
+		hm.put("Vaishali", 79);
+		hm.put("pooja", 78);
+		hm.put("Bhadane", 70);
+		hm.put("vaishali", 85);
+		
+		System.out.println(hm);
+		
+		String a1="vaishali";
+		String a2="vaishu";
+		
+		System.out.println(a1.hashCode());
+		System.out.println(a2.hashCode()); */
+		
+		HashMap<Integer,String> hm=new HashMap<>();
+		for(int i=0;i<11;i++) {
+			hm.put(i, "A"+i);
+		}
+		hm.put(1, "A");
+		hm.put(3, "B");
+		hm.put(3, "C");
+		System.out.println(hm);
+		
+		System.out.println(hm.get("B"));
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
